@@ -30,3 +30,6 @@ Esta Landing Page utiliza uma estética **Dark Mode** com acentos em roxo neon, 
 
 ---
 
+![Preview da Landing Page](./assets/landingpage.jpg)
+
+
