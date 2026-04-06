@@ -1,0 +1,186 @@
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+    
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("assets/blurry-gradient-haikei.svg") center / cover no-repeat
+    ;
+
+    color: white;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    background: linear-gradient(to right, black, #42207e, black);
+    border-bottom: 4px solid #7c3aed;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+main{
+    margin: 100px 80px;
+}
+
+.header-nav{
+    display: flex;
+    gap: 20px;
+}
+
+.header-link{
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.header-link:hover{
+    color: #7c3aed;
+    transform: scale(1.1);
+}
+
+.header-link:visited{
+    text-decoration: none;
+}
+
+.btn-fake{
+    display: flex;
+    gap: 16px;
+}
+
+.fake-btn{
+    color: white;
+    background-color: #7c3aed;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+
+    transition: all .2s ease;
+}
+
+.fake-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#about-me{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    margin: 40px 0;
+}
+
+#about-me img{
+    border-radius: 360px;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.9);
+}
+
+.about-me-box{
+    margin: 0 40px;
+}
+
+.about-me-box p{
+    font-size: 20px;
+}
+
+#description-projects{
+    font-size: 20px;
+}
+
+.title-section{
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: #7c3aed;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 4px;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #7c3aed, transparent);
+  margin: 0;
+}
+
+#box-projects{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px; /* diminui aqui */
+    margin: 70px 80px 0px 0px;
+}
+
+.card{
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.01)),
+        url("assets/blurry-gradient-haikei.png") center / cover no-repeat;
+    border: 1px solid #7c3aed;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 20px;
+    gap: 20px;
+
+    transition: all .2s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card p{
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #7c3aed;
+    text-underline-offset: 5px;
+
+}
+
+.card a{
+    color: white;
+    text-decoration: none;
+    background: #7c3aed;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.card a:visited{
+    text-decoration: none;
+}
