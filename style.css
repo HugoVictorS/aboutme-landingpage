@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
 body{
     height: 100%;
     padding: 0;
     margin: 0;
 
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.02em;
     
     background: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -22,7 +30,7 @@ header{
 
     padding: 0 50px;
 
-    background: linear-gradient(to right, black, #42207e, black);
+    background: linear-gradient(135deg, black, #341962, black);
     border-bottom: 4px solid #7c3aed;
 
     position: fixed;
@@ -47,35 +55,34 @@ main{
     color: white;
     text-decoration: none;
     transition: all .2s ease;
+    filter: drop-shadow(0 0 8px #5a28b0);
 }
 
 .header-link:hover{
     color: #7c3aed;
     transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #7c3aed) drop-shadow(0 0 10px #7c3aed);
 }
 
 .header-link:visited{
     text-decoration: none;
 }
 
-.btn-fake{
+.icons-btn{
     display: flex;
-    gap: 16px;
+    gap: 25px;
 }
 
-.fake-btn{
+.icons-btn a i{
     color: white;
-    background-color: #7c3aed;
-    padding: 10px;
-    border: none;
-    border-radius: 16px;
-    font-size: 16px;
-
-    transition: all .2s ease;
+    font-size: 22px;
+    transition: all 0.2s ease;
+    filter: drop-shadow(0 0 8px #5a28b0);
 }
 
-.fake-btn:hover{
-    cursor: pointer;
+.icons-btn a i:hover{
+    color: #7c3aed;
+    filter: drop-shadow(0 0 15px #7c3aed) drop-shadow(0 0 10px #7c3aed);
     transform: scale(1.1);
 }
 
@@ -85,17 +92,19 @@ main{
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px;
+    padding: 0px;
     margin: 40px 0;
+    
+    height: 800px;
 }
 
 #about-me img{
-    border-radius: 360px;
     box-shadow: 0 0 20px rgba(124, 58, 237, 0.9);
+    width: 1000px;
 }
 
 .about-me-box{
-    margin: 0 40px;
+    margin: 0 60px;
 }
 
 .about-me-box p{
@@ -117,7 +126,6 @@ main{
 .divider {
   height: 1px;
   background: linear-gradient(to right, transparent, #7c3aed, transparent);
-  margin: 0;
 }
 
 #box-projects{
