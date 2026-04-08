@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-html {
+html{
     scroll-behavior: smooth;
-    line-height: 1.6;
 }
 
 body{
@@ -30,7 +30,7 @@ header{
 
     padding: 0 50px;
 
-    background: linear-gradient(135deg, black, #341962, black);
+    background: linear-gradient(to right, black, #31175dc7, black);
     border-bottom: 4px solid #7c3aed;
 
     position: fixed;
@@ -44,6 +44,17 @@ header{
 
 main{
     margin: 100px 80px;
+}
+
+.logo-box{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-box span{
+    color: #7c3aed;
+    filter: drop-shadow(0 0 5px #7c3aed);
 }
 
 .header-nav{
@@ -86,25 +97,41 @@ main{
     transform: scale(1.1);
 }
 
+#my-projects{
+    max-width: 100%;
+}
+
+.mpj-box1{
+    margin-top: 80px;
+    margin-right: 40px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.mpj-box1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.9);
+}
+
 #about-me{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0px;
-    margin: 40px 0;
-    
-    height: 800px;
+    margin: 100px 0;
 }
 
 #about-me img{
-    box-shadow: 0 0 20px rgba(124, 58, 237, 0.9);
-    width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.9);
 }
 
 .about-me-box{
-    margin: 0 60px;
+    margin: 0 40px;
 }
 
 .about-me-box p{
@@ -116,6 +143,9 @@ main{
 }
 
 .title-section{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 40px;
     text-decoration: underline;
     text-decoration-color: #7c3aed;
@@ -126,12 +156,13 @@ main{
 .divider {
   height: 1px;
   background: linear-gradient(to right, transparent, #7c3aed, transparent);
+  margin: 0;
 }
 
 #box-projects{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 100px; /* diminui aqui */
+    gap: 100px;
     margin: 70px 80px 0px 0px;
 }
 
@@ -151,6 +182,7 @@ main{
     justify-content: space-between;
     
     padding: 20px;
+    margin-bottom: 100px;
     gap: 20px;
 
     transition: all .2s ease;
@@ -191,4 +223,8 @@ main{
 
 .card a:visited{
     text-decoration: none;
+}
+
+.mpj-box1{
+    display: flex;
 }
