@@ -113,7 +113,8 @@ main{
     height: 300px;
     width: 300px;
     border-radius: 8px;
-    box-shadow: 0 0 40px rgba(124, 58, 237, 0.9);
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.9);
+    border: 1px solid #7c3aed;
 }
 
 #about-me{
@@ -123,11 +124,14 @@ main{
     align-items: center;
 
     margin: 100px 0;
+
+    scroll-margin-top:150px;
 }
 
 #about-me img{
     border-radius: 8px;
-    box-shadow: 0 0 40px rgba(124, 58, 237, 0.9);
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.9);
+    border: 1px solid #7c3aed;
 }
 
 .about-me-box{
@@ -156,7 +160,7 @@ main{
 .divider {
   height: 1px;
   background: linear-gradient(to right, transparent, #7c3aed, transparent);
-  margin: 0;
+  margin-bottom:80px;
 }
 
 #box-projects{
@@ -189,8 +193,9 @@ main{
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: translateY(-10px);
     cursor: pointer;
+    box-shadow: 0 0 25px rgb(139, 71, 255);
 }
 
 .card p{
@@ -227,4 +232,115 @@ main{
 
 .mpj-box1{
     display: flex;
+}
+
+
+.card-skills{
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.01)),
+        url("assets/blurry-gradient-haikei.png") center / cover no-repeat;
+    border: 1px solid #7c3aed;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+    width: 300px;
+
+    transition: all .2s ease;
+
+}
+
+.card-skills:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 0 25px rgb(139, 71, 255);
+}
+
+.card-skills h3{
+    display: flex;
+    justify-content: center;
+
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #7c3aed;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 4px;
+}
+
+.icons-skills{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 50px;
+    gap: 40px;
+}
+
+.table-skills{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+#html-logo{
+    filter: drop-shadow(0 0 8px #fb923caa);
+    transition: all .2s ease;
+}
+
+#html-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #fb923c);
+}
+
+#css-logo{
+    filter: drop-shadow(0 0 8px #38bdf8aa);
+    transition: all .2s ease;
+}
+
+#css-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #38bdf8);
+}
+
+#js-logo{
+    filter: drop-shadow(0 0 8px #facc15aa);
+    transition: all .2s ease;
+}
+
+#js-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #facc15);
+}
+
+#python-logo{
+    filter: drop-shadow(0 0 10px #FFD43Baa);
+    transition: all .2s ease;
+}
+
+#python-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #FFD43B);
+}
+
+#windows-logo{
+    filter: drop-shadow(0 0 8px #3EA6FFaa);
+    transition: all .2s ease;
+}
+
+#windows-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #65b5fb);
+}
+
+#linux-logo{
+    filter:drop-shadow(0 0 8px #ffffaa);
+    transition: all .2s ease;
+}
+
+#linux-logo:hover{
+    transform: scale(1.1);
+    filter:drop-shadow(0 0 10px #ffff);
 }
